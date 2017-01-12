@@ -47,6 +47,23 @@ class ViewController: UIViewController {
         }
     }
     
+    func makeLoginRequest() {
+        APIModule.sharedModule.login(completionHandler: { data in
+            do {
+                let responseDict = try JSONSerialization.jsonObject(with: data) as! [String:Any]
+                let responseKmd = responseDict["_kmd"] as! [String:Any]
+                let authtoken = responseKmd["authtoken"] as! [String:Any]
+                    print(authtoken)
+                APIModule.sharedModule.user = "Kinvey \(authtoken)" as? NSString
+            } catch {
+                print(error.localizedDescription)
+            }
+            
+        }) { error in
+            print("error:\(error)")
+        }
+    }
+    
     func makeUploadRequest (track: String?) {
         APIModule.sharedModule.upload(track: track, completionHandler: { data in
             print("upload success")

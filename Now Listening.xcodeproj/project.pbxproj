@@ -12,6 +12,7 @@
 		4BA24E151E27780100DB4583 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BA24E131E27780100DB4583 /* Main.storyboard */; };
 		4BA24E171E27780100DB4583 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BA24E161E27780100DB4583 /* Assets.xcassets */; };
 		4BA24E1A1E27780100DB4583 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BA24E181E27780100DB4583 /* LaunchScreen.storyboard */; };
+		4BA24E221E27B4CF00DB4583 /* API Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA24E211E27B4CF00DB4583 /* API Module.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		4BA24E161E27780100DB4583 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4BA24E191E27780100DB4583 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4BA24E1B1E27780100DB4583 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BA24E211E27B4CF00DB4583 /* API Module.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "API Module.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				4BA24E0F1E27780100DB4583 /* AppDelegate.swift */,
 				4BA24E111E27780100DB4583 /* ViewController.swift */,
+				4BA24E211E27B4CF00DB4583 /* API Module.swift */,
 				4BA24E131E27780100DB4583 /* Main.storyboard */,
 				4BA24E161E27780100DB4583 /* Assets.xcassets */,
 				4BA24E181E27780100DB4583 /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			files = (
 				4BA24E121E27780100DB4583 /* ViewController.swift in Sources */,
 				4BA24E101E27780100DB4583 /* AppDelegate.swift in Sources */,
+				4BA24E221E27B4CF00DB4583 /* API Module.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +265,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 63934CMXQD;
 				INFOPLIST_FILE = "Now Listening/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "xcy.Now-Listening";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -274,6 +279,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 63934CMXQD;
 				INFOPLIST_FILE = "Now Listening/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "xcy.Now-Listening";
 				PRODUCT_NAME = "$(TARGET_NAME)";

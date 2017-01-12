@@ -21,17 +21,19 @@ class APIModule: NSObject {
 
     static let sharedModule = APIModule()
     
-    func upload (track: Data?, completionHandler: @escaping (Data)->Void, errorHandler: @escaping (Error)->Void) {
+    func upload (track: String?, completionHandler: @escaping (Data)->Void, errorHandler: @escaping (Error)->Void) {
         
         var request = NSMutableURLRequest()
         let urlStr = "https://baas.kinvey.com/appdata/\(apiKey)/tracks/track1"
         request.url = URL(string: urlStr)
         request.httpMethod = "POST"
         
-        let body: Data? = track
-        let opt: JSONSerialization.WritingOptions? = nil
+        let body: String? = track
+        //let opt: JSONSerialization.WritingOptions? = .prettyPrinted
+        let jsonBody = "{\"title\": \(track)}"
+        
         do {
-            let bodyData = try JSONSerialization.data(withJSONObject: body as Any, options: opt!)
+            let bodyData = try JSONSerialization.data(withJSONObject: jsonBody as Any)
             request.httpBody = bodyData
             request.addValue(self.user as! String, forHTTPHeaderField: "Authorization")
             request.addValue("application/json", forHTTPHeaderField: "Content-Type")

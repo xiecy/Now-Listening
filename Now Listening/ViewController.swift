@@ -38,18 +38,16 @@ class ViewController: UIViewController {
             songTitle.text = title;
             songArtist.text = artist;
             
-            let trackData = ["title": title, "artist": artist]
-            
             print("\(title) on \(albumTitle) by \(artist)")
             
-            makeUploadRequest(track: trackData as Data)
+            makeUploadRequest(track: title)
         }
         else {
             print("error")
         }
     }
     
-    func makeUploadRequest (track: Data?) {
+    func makeUploadRequest (track: String?) {
         APIModule.sharedModule.upload(track: track, completionHandler: { data in
             print("upload success")
         }, errorHandler: { error in

@@ -63,8 +63,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your SO is listening to" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BZ1-lD-orJ">
-                                <rect key="frame" x="104" y="282" width="167" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your friend is listening to" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BZ1-lD-orJ">
+                                <rect key="frame" x="104" y="282" width="189" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H0v-cl-aPF">
+                                <rect key="frame" x="19" y="340" width="337" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -76,6 +83,7 @@
                     <connections>
                         <outlet property="FListening" destination="BZ1-lD-orJ" id="S9d-mc-EkY"/>
                         <outlet property="YListening" destination="bWP-sv-h0S" id="QDx-0j-vvg"/>
+                        <outlet property="fSongArtist" destination="H0v-cl-aPF" id="9C3-ZI-VhA"/>
                         <outlet property="fSongTitle" destination="Kho-0c-eSI" id="bfB-RY-St3"/>
                         <outlet property="songArtist" destination="wDQ-Ot-Mqw" id="L5t-1W-duz"/>
                         <outlet property="songTitle" destination="vgy-SA-j78" id="Grv-TV-VOF"/>
